@@ -11,8 +11,15 @@
     <script src="movement.js"></script>
     </head>
     <body>
-        <a-scene physics="gravity:0">
-            <a-entity id="look" kinematic-body look-controls wasd-controls="acceleration:200" camera position="-10 -18 -20" rotation="-6 -0.5 0"></a-entity>
+        <a-scene>
+            <a-entity id="look" kinematic-body look-controls wasd-controls="acceleration:200" camera position="-10 -18 -20" rotation="-6 -0.5 0">
+                <a-entity position="-5 -5 -12">
+                    <a-entity position="-0.6 0.13 0" text="font: aileronsemidbold; width:12; color:white; value: TURTLE\nRESCUED"></a-entity>
+                    <a-entity id="turtlesRemainingText" position="-8 0.3 0" text="font:exo2bold; align:center; width:30;color:white;value:5"></a-entity>
+                    <a-entity id="gameOverText" position="15 0.3 0" text="font:exo2bold; align:center;width:30;color:white"></a-entity>
+                </a-entity>
+            
+            </a-entity>
             <a-assets>
                 <a-asset-item id="environment" src="islands/scene.gltf"></a-asset-item>
                 <a-asset-item id="researcher" src="researcher/scene.gltf"></a-asset-item>
