@@ -11,7 +11,7 @@
     <script src="movement.js"></script>
     </head>
     <body>
-        <a-scene>
+        <a-scene physics="gravity:0">
             <a-entity id="look" kinematic-body look-controls wasd-controls="acceleration:200" camera position="-10 -18 -20" rotation="-6 -0.5 0">
                 <a-entity position="-5 -5 -12">
                     <a-entity position="-0.6 0.13 0" text="font: aileronsemidbold; width:12; color:white; value: TURTLE\nRESCUED"></a-entity>
@@ -28,12 +28,12 @@
             </a-assets>
             <a-sky src="#space" rotation="-180 10 0"></a-sky>
             <a-entity gltf-model="#environment" position="-10 -25 -12" scale="3 3 3"></a-entity>
-            <a-entity idl="#researcher" static-body="shape:sphere;sphereRadius:16" game-play gltf-model="#researcher" rotation="0 180 0" scale="3 3 3" animation-mixer="clip:Animation" movement></a-entity>
-            <a-entity id="#turtle1" static-body="shape:sphere;sphereRadius:13" game-play gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="-4 -24 5"></a-entity>
-            <a-entity id="#turtle2" static-body="shape:sphere;sphereRadius:13" game-play gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="-25 -19 16"></a-entity>
-            <a-entity id="#turtle3" static-body="shape:sphere;sphereRadius:13" game-play gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="27 -24 10"></a-entity>
-            <a-entity id="#turtle4" static-body="shape:sphere;sphereRadius:13" game-play gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="35 -23 -35"></a-entity>
-            <a-entity id="#turtle5" static-body="shape:sphere;sphereRadius:13" game-play gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="-35 -23 -35"></a-entity>
+            <a-entity id="researcher" static-body="shape:sphere;sphereRadius:16"  game-play gltf-model="#researcher" rotation="0 180 0" scale="3 3 3" animation-mixer="clip:Animation" movement></a-entity>
+            <a-entity id="turtle1" game-play static-body="shape:sphere;sphereRadius:13" gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="-4 -24 5"></a-entity>
+            <a-entity id="turtle2" game-play static-body="shape:sphere;sphereRadius:13" gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="-25 -19 16"></a-entity>
+            <a-entity id="turtle3" game-play static-body="shape:sphere;sphereRadius:13" gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="27 -24 10"></a-entity>
+            <a-entity id="turtle4" game-play static-body="shape:sphere;sphereRadius:13" gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="35 -23 -35"></a-entity>
+            <a-entity id="turtle5" game-play static-body="shape:sphere;sphereRadius:13" gltf-model="#turtle"scale="3 3 3" animation-mixer="clip:Animation" movement position="-35 -23 -35"></a-entity>
             
             
 
